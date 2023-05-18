@@ -1,0 +1,380 @@
+/*Google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --main-color: #6e7a31;
+    --second-color: #414141 ;
+    --third-color: #dedaad;
+    --fouth-color: #a7b987;
+
+}
+section {
+    padding: 50px 10%;
+}
+*::selection {
+    color: #fff;
+    background: var(--main-color);
+}
+img {
+    width: 100%;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    box-shadow: 0 4px 41px rgb(14 55 54 / 14%);
+    padding: 15px 10%;
+    transition: 0.2s;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: 40px;
+}
+
+.navbar{
+    display: flex;
+}
+
+.navbar a{
+    font-size: 1rem;
+    padding: 11px 20px;
+    color: var(--second-color);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.navbar a:hover {
+    color: var(--main-color);
+}
+
+#menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1001;
+    display: none
+}
+
+.icon i{
+    font-size: 18px;
+    color: var(--second-color);
+    margin: 0 Spx;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.icon i:hover {
+    color: var(--main-color);
+}
+
+.home {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url("Img/ThaiBG.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    gap: 1rem;
+}
+
+.home-text {
+    flex: 1 1 17rem;
+}
+
+.home-text span {
+    font-size: 30px;
+    font-weight: bold;
+    border-bottom: 1.5px solid;
+    color: #414141;
+    text-shadow:
+    -2px -2px 0 #fff,
+    2px -2px 0 #fff,
+    -2px 2px 0 #fff,
+    2px 2px 0 #fff;
+    
+}
+
+.home-text img {
+    filter: drop-shadow(8px 8px 8px var(--main-color));
+}
+
+.home-text h2 {
+    margin-bottom: 1rem;
+    text-shadow:
+    -2px -2px 0 #fff,
+    2px -2px 0 #fff,
+    -2px 2px 0 #fff,
+    2px 2px 0 #fff;
+    filter: drop-shadow(2px 2px 2px var(--main-color));    
+}
+
+.home-img {
+    flex: 1 1 17rem;
+    filter: drop-shadow(8px 8px 8px var(--main-color));
+}
+
+/*Shop*/
+
+.btn {
+    padding: 0.5rem 1rem;
+    background: var(--main-color);
+    color: #fff;
+    font-weight: 100;
+    border-radius: 6rem;
+    display: center;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 0.05rem;
+    max-width: 100px;
+}
+
+.title {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.Sheet {
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+.Sida-img {
+    flex: 1 1 17rem;
+}
+
+.Sida-text{
+    flex: 1 1 17rem;
+}
+
+.Sida-text h17{
+    color: var(--main-color);
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.Sida-text h3{
+    margin-bottom: 1rem;
+}
+
+.Mada-img {
+    flex: 1 1 17rem;
+}
+
+.Mada-text{
+    flex: 1 1 17rem;
+}
+
+.Mada-text h3{
+    margin-bottom: 1rem;
+}
+
+.Mada-text h16{
+    color: var(--main-color);
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*2*/
+
+.Shop {
+    background-color: var(--fouth-color);
+}
+
+.Shop-text {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+
+.container {
+    width: 95%;
+    padding: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+}
+
+.container .card {
+    height: 470px;
+    width: 400px;
+    background: var(--third-color);
+    border-radius: 5%;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0, 2);
+}
+
+.container .card .C-Sida {
+    width: 300px;
+    height: 245px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.container .card .C-Sida img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.3s;
+}
+
+.container .card .C-Sida:hover img{
+    transform: scale(1.1);
+}
+
+.container .card .Info {
+    text-align: right;
+  }
+  
+.container .card .Info h1 {
+    width: 60%;
+    text-align: center;
+    margin: 10px auto;
+    font-size: 30px;
+    color: var(--main-color);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+  
+.container .card .Info p {
+    text-align: left;
+    text-indent: 3rem;
+    margin-top: 8px;
+    line-height: 21px;
+}
+
+.container .card .Info h3 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.container .card .card-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    background: var(--second-color);
+    padding: 0.5rem 1rem;
+    font-weight: 100;
+    border-radius: 6rem;
+    column-gap: 0.05rem;
+    max-width: 100px;
+    margin: 0 150px;
+    transition: 0.3s;
+}
+
+
+/*3*/
+.About {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+}
+
+.About-content {    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.small-image {
+    width: 400px; /* Adjust the desired width */
+    display: center;
+    align-items: center;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .About-text {
+    text-indent: 5rem;
+    font-size: 25px;
+  }
+
+/*4.Contact*/
+.Contact {
+    background-color: var(--second-color);
+}
+
+.Contact-content {
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.Contact-Spons-text {
+    font-size: 20px;
+}
+
+.Contact-text {
+    color: #fff;
+    display: flex;
+    align-items: flex-start; 
+    justify-content: flex-end; 
+    text-indent: 1rem;
+}
+
+.small-image2 {
+    width: 70px; 
+}
+
+.Contact-spons-pic {
+    display: flex;
+    flex-direction: row; 
+    align-items: flex-end; 
+    margin-top: 1 5rem;
+    gap: 1rem; 
+}
+
+.Contact-text2 {
+    color: #fff;
+}
+
+.Copyright {
+    color: #fff;
+    text-align: right;
+}
+
+  
+
+  
+  
